@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Test Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="click-btn">Click Me!</button>
+    <div id="target-div"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            // (1) select element with id="click-btn"
+            // (2) add a function to the event "click"
+            $("#click-btn").click(function() {
+
+                // What does function do?
+                // (1) find target_div
+                // (2) add some texts to it
+                $("#target-div").append("Hello");
+            });
+        });
+    </script>
+</body>
+</html>
